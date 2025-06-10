@@ -1,0 +1,28 @@
+// default-colors
+$color-r: red;
+$color-b: blue;
+$color-g: green;
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey: grey;
+
+// main-bg-colors
+$gradient-color-one: linear-gradient(90deg, #2093fe, #c217fee5 90%);
+$gradient-color-two: linear-gradient(90deg, #c7d4ff, #f4b8b8, #c7d4ff, #c7d4ff, #e3eab3, #c5f1d0);
+$gradient-color-three: linear-gradient(90deg, #e25377, #8cabfe, #62b4ff);
+$gradient-color-four: linear-gradient(90deg, #ffffff, #f4b8b8, #e3b3ea, #c5c9f1);
+$gradient-color-five: linear-gradient(90deg, #ffffff, #f4b8b8, #e3b3ea, #c5c9f1);
+
+$bg-gradient:
+  $gradient-color-one, $gradient-color-two, $gradient-color-three, $gradient-color-four,
+  $gradient-color-five;
+
+// fonts
+$color-font-normal: #414246;
+$color-font-bold: #232325;
+$color-font-light: $color-white;
+
+// bg-components-colors
+$default-card-bg: #F6F6F6;
+$default-card-bg-dark: #eeeeee;

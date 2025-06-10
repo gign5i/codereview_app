@@ -1,0 +1,21 @@
+@import "typography";
+@import "variables";
+@import "colors";
+
+@font-face {
+  font-family: "Wix Madefor Display";
+  src:
+    local("Wix Madefor Display"),
+    url("/public/fonts/WixMadeforDisplayRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Wix Madefor Display Bold";
+  src:
+    local("Wix Madefor Display Bold"),
+    url("/public/fonts/WixMadeforDisplayBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
