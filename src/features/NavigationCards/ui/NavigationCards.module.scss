@@ -22,7 +22,7 @@
   border-radius: 6px;
   padding: 20px;
   background: $default-card-bg;
-
+  width: 249px;
   height: 280px;
   overflow: hidden;
   z-index: 1;
@@ -47,13 +47,46 @@
 
   &:hover::before {
     opacity: 1;
-    animation: hoverBg 1s forwards;
-    animation-delay: 0s;
+    animation: hoverBg 1.2s forwards;
+    animation-delay: 0.1s;
+  }
+
+  &:hover .description {
+      animation-delay: 0.5s;
+      opacity: 1;
+      animation: hoverContent 1s forwards;
+  }
+  &:hover .cardHeader {
+    animation-delay: 0.5s;
+    animation: hoverContent 1s forwards;
   }
 }
 
 @keyframes hoverBg {
   to {
     transform: translate(10px, -5px) rotate(15deg) scale(1.5);
+  }
+}
+
+.iconStyle {
+  height: 26px;
+  width: 26px;
+}
+
+.cardHeader {
+  height: 40px;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.description {
+  margin-top: 10px;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes hoverContent {
+  to {
+    transform: translateY(5px);
   }
 }

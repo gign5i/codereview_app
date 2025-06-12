@@ -8,11 +8,13 @@ const NavigationCards = (): ReactElement => (
     {categoriesList.map(category => (
       <Card
         className={styles.cardItem}
+        headerClassName={styles.cardHeader}
+        contentClassName={styles.description}
         key={category.id}
-        header={<Icon icon={category.icon} />}
-        footer={<Typography>{category.title}</Typography>}
+        header={<Icon icon={category.icon} className={styles.iconStyle} />}
+        footer={<Typography type="normal">{category.title}</Typography>}
       >
-        <Typography>{category.description}</Typography>
+        <Typography type="small">{category.description}</Typography>
       </Card>
     ))}
   </div>

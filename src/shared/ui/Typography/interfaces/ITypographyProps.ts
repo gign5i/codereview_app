@@ -6,6 +6,8 @@ export type TTypographyType =
   | "p"
   | "error"
   | "title"
+  | "small"
+  | "medium"
   | "primarySelect"
   | "secondarySelect";
 

@@ -20,10 +20,24 @@
   letter-spacing: -1px;
 }
 
+.root_small {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+
 .root_normal {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: -0.5px;
+}
+
+.root_medium {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
   letter-spacing: -0.5px;
 }
 
