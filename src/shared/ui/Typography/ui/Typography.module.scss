@@ -1,24 +1,37 @@
-@import "../../../../../public/styles/utils/styles.scss";
+@import "../../../../../public/styles/utils/styles";
+@import "../../../../../public/styles/utils/colors";
 
 .root {
   font-family: "Wix Madefor Display", sans-serif;
-  color: $color-font-normal;
+  color: $color-font-default;
 }
 
 .root_h1 {
-  font: var(--font-l);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 52px;
+  letter-spacing: -1px;
 }
 
-.root_h3 {
-  font: var(--font-m);
+.root_h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: -1px;
 }
 
-.root_p_xs {
-  font: var(--font-xs);
+.root_normal {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
 }
 
-.root_p {
-  font: var(--font-sm);
+.root_title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
 }
 
 .root_error {

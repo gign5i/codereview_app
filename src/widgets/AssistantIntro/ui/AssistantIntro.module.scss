@@ -1,0 +1,24 @@
+@use "sass:map";
+@import "@@/public/styles/utils/breakpoints";
+
+.assistantIntroRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  width: 436px;
+  height: 300px;
+  text-align: center;
+  gap: 20px;
+  @media screen and (max-width: map.get($breakpoints, 'sm')) {
+    margin-top: 140px;
+    height: 226px;
+    width: 279px;
+  }
+}
+
+.sophieAvatar {
+  width: 96px;
+  height: 96px;
+}

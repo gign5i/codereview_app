@@ -1,0 +1,54 @@
+@use "sass:map";
+@import "@@/public/styles/utils/breakpoints";
+
+.specialisationBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.cardStyle {
+  position: absolute !important;
+  left: 50%;
+  transform: translate(-50%, 72%);
+  width: 565px;
+  border-radius: 12px !important;
+  overflow: hidden;
+  @media screen and (max-width: map.get($breakpoints, sm)) {
+    transform: translate(-50%, 60%);
+    width: 100%;
+    padding: 15px 0 15px 15px !important;
+  }
+}
+
+.categoriesCustom {
+  margin-bottom: 30px;
+
+  @media screen and (max-width: map.get($breakpoints, sm)) {
+    padding-right: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+
+.categoriesWrapper {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  gap: 14px;
+  column-gap: 80px;
+  @media screen and (max-width: map.get($breakpoints, sm)) {
+    flex-wrap: initial;
+    flex-direction: column;
+  }
+}
+
+.categoryItem {
+  display: flex;
+  max-width: 222px;
+  gap: 6px;
+  flex: 0 50%;
+}

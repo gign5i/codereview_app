@@ -6,6 +6,7 @@ $color-g: green;
 $color-white: #ffffff;
 $color-black: #000000;
 $color-grey: grey;
+$color-grey-transparent: rgba(128, 128, 128, 0.2);
 
 // main-bg-colors
 $gradient-color-one: linear-gradient(90deg, #2093fe, #c217fee5 90%);
@@ -19,10 +20,11 @@ $bg-gradient:
   $gradient-color-five;
 
 // fonts
+$color-font-default: #232325;
 $color-font-normal: #414246;
-$color-font-bold: #232325;
+//$color-font-bold: #232325;
 $color-font-light: $color-white;
 
 // bg-components-colors
-$default-card-bg: #F6F6F6;
+$default-card-bg: #f6f6f6;
 $default-card-bg-dark: #eeeeee;

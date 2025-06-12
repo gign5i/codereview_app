@@ -1,0 +1,58 @@
+@use "sass:map";
+@import "../../../../public/styles/utils/colors";
+@import "../../../../public/styles/utils/breakpoints";
+
+.headerRoot {
+  position: fixed;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  padding: 17px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 1000;
+
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
+    width: auto;
+    margin: 4px;
+    justify-content: space-between;
+  }
+}
+
+.logoPc {
+  width: 150px;
+  height: 22px;
+}
+
+.logoMobile {
+  width: 36px;
+  height: 22px;
+}
+
+.menuIcon {
+  width: 18px;
+  height: 18px;
+}
+//
+//.specialisationBtn {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  gap: 6px;
+//}
+
+.loginBtn {
+  display: flex;
+}
+
+//.headerTitle {
+//  background: linear-gradient(45deg, #2093fe, #c217fee5);
+//  background-clip: text;
+//  color: transparent;
+//
+//  font-weight: 500;
+//  font-size: 22px;
+//  line-height: 22px;
+//  letter-spacing: -1px;
+//}

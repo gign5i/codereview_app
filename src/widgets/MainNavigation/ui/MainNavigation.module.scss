@@ -1,0 +1,19 @@
+@use "sass:map";
+@import "@@/public/styles/utils/breakpoints";
+
+.navigationRoot {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin-top: 80px;
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
+    margin-top: 50px;
+  }
+}
+
+.categoriesWrapper {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}

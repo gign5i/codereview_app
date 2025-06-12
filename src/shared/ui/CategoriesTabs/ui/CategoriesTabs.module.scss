@@ -1,0 +1,27 @@
+@use "sass:map";
+@import "../../../../../public/styles/utils/breakpoints";
+
+.specialisationsWrapper {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  //@media screen and (max-width: map.get($breakpoints, sm)) {
+  //  padding-right: 15px;
+  //  overflow-x: auto;
+  //  white-space: nowrap;
+  //  scrollbar-width: none;
+  //  -ms-overflow-style: none;
+  //}
+}
+
+.specialisationsWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.specialisationItem {
+  width: auto;
+  height: 34px;
+  padding: 5px 10px !important;
+  border-radius: 12px !important;
+}

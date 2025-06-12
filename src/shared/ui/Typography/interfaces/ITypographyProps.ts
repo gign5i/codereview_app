@@ -2,7 +2,7 @@ export type TTypographyType =
   | "h1"
   | "h2"
   | "h3"
-  | "p_xs"
+  | "normal"
   | "p"
   | "error"
   | "title"

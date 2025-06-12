@@ -1,12 +1,12 @@
-@import "typography";
-@import "variables";
-@import "colors";
+@use "typography";
+@use "./variables";
+@use "colors";
 
 @font-face {
   font-family: "Wix Madefor Display";
   src:
     local("Wix Madefor Display"),
-    url("/public/fonts/WixMadeforDisplayRegular.otf") format("opentype");
+    url("../../../public/fonts/WixMadeforDisplayRegular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
   font-family: "Wix Madefor Display Bold";
   src:
     local("Wix Madefor Display Bold"),
-    url("/public/fonts/WixMadeforDisplayBold.otf") format("opentype");
+    url("../../../public/fonts/WixMadeforDisplayBold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }

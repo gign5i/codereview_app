@@ -1,0 +1,59 @@
+@use "sass:map";
+@import "@@/public/styles/utils/colors";
+@import "@@/public/styles/utils/breakpoints";
+
+.root {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 6px;
+  padding: 20px;
+  background: $default-card-bg;
+
+  height: 280px;
+  overflow: hidden;
+  z-index: 1;
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../../../../public/images/background-category.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    transform: translate(0, 10px) rotate(15deg) scale(1.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: -1;
+    background-color: $default-card-bg-dark;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    animation: hoverBg 1s forwards;
+    animation-delay: 0s;
+  }
+}
+
+@keyframes hoverBg {
+  to {
+    transform: translate(10px, -5px) rotate(15deg) scale(1.5);
+  }
+}
