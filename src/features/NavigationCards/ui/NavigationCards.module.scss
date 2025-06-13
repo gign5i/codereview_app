@@ -8,9 +8,10 @@
   gap: 8px;
 
   @media screen and (max-width: map.get($breakpoints, "sm")) {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    //display: flex;
+    //flex-direction: column;
+    //gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -52,13 +53,18 @@
   }
 
   &:hover .description {
-      animation-delay: 0.5s;
-      opacity: 1;
-      animation: hoverContent 1s forwards;
+    animation-delay: 0.5s;
+    opacity: 1;
+    animation: hoverContent 1s forwards;
   }
   &:hover .cardHeader {
     animation-delay: 0.5s;
     animation: hoverContent 1s forwards;
+  }
+
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
+    width: auto;
+    height: auto;
   }
 }
 
@@ -89,4 +95,70 @@
   to {
     transform: translateY(5px);
   }
+}
+
+.additionalIconStyle {
+  width: 115px;
+  height: 40px;
+}
+
+.additionalMenuCardsWrapper {
+  display: flex;
+  gap: 8px;
+
+
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
+    flex-direction: column;
+  }
+}
+
+.contactToUsCard {
+  width: calc(100% - 249px);
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
+    width: auto;
+  }
+}
+
+.contactDescription {
+  width: 476px;
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
+    width: auto;
+  }
+}
+
+.postVacancy {
+  background-color: $color-font-normal;
+  width: 249px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
+    width: auto;
+    height: auto;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.badge {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid $default-card-bg;
+  color: $color-white;
+}
+
+.postVacansyTitle {
+  color: $color-white;
 }

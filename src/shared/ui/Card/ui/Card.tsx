@@ -14,7 +14,7 @@ const Card = ({
 }: ICardProps): ReactElement => (
   <section className={clsx(styles.root, className)}>
     {header && <div className={clsx(styles.headerRoot, headerClassName)}>{header}</div>}
-    <div className={clsx(contentClassName)}>{children}</div>
+    {children && <div className={clsx(contentClassName)}>{children}</div>}
     {footer && <div className={clsx(styles.footerRoot, footerClassName)}>{footer}</div>}
   </section>
 );

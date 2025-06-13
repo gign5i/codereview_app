@@ -1,0 +1,102 @@
+@import "@@/public/styles/utils/colors";
+
+.footerContainer {
+  background-color: $default-footer-bg-light;
+}
+.footerContent {
+  padding: 60px 110px 20px 110px;
+  height: auto;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.contactsDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.mainFooterContent {
+  display: flex;
+  gap: 50px;
+  height: 160px;
+  margin-bottom: 20px;
+}
+
+.linksWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  row-gap: 12px;
+  column-gap: 50px;
+}
+
+.cardStyle {
+  background: $color-font-default;
+  width: 152px;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.linkItem {
+  color: $color-white;
+}
+
+.customHr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background: $color-border-light;
+}
+
+.otherDetails {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+// TODO: поменять
+.one {
+  width: 320px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+
+.two {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.footerLogo {
+  height: 30px;
+  width: 233px;
+}
+
+.privacyPolicy {
+  margin-top: 60px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialsWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.iconStyle {
+  width: 30px;
+  height: 30px;
+}

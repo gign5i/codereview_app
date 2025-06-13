@@ -15,16 +15,18 @@ const Header = (): ReactElement => {
 
   return (
     <header className={styles.headerRoot}>
-      {isMobile ? (
-        <Image src={LogoMobile} alt="codereview-logo-mobile" className={styles.logoMobile} />
-      ) : (
-        <Image src={LogoPc} alt="codereview-logo-pc" className={styles.logoPc} />
-      )}
-      <NavigationModal />
-      <Button outline className={styles.loginBtn}>
-        <Image src={ProfileIcon} alt="profile-icon" className={styles.menuIcon} />
-        {!isMobile && <Typography type="normal">Войти</Typography>}
-      </Button>
+      <nav className={styles.navigationContainer}>
+        {isMobile ? (
+          <Image src={LogoMobile} alt="codereview-logo-mobile" className={styles.logoMobile} />
+        ) : (
+          <Image src={LogoPc} alt="codereview-logo-pc" className={styles.logoPc} />
+        )}
+        <NavigationModal />
+        <Button outline className={styles.loginBtn}>
+          <Image src={ProfileIcon} alt="profile-icon" className={styles.menuIcon} />
+          {!isMobile && <Typography type="normal">Войти</Typography>}
+        </Button>
+      </nav>
     </header>
   );
 };

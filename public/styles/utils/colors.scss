@@ -8,23 +8,46 @@ $color-black: #000000;
 $color-grey: grey;
 $color-grey-transparent: rgba(128, 128, 128, 0.2);
 
-// main-bg-colors
-$gradient-color-one: linear-gradient(90deg, #2093fe, #c217fee5 90%);
-$gradient-color-two: linear-gradient(90deg, #c7d4ff, #f4b8b8, #c7d4ff, #c7d4ff, #e3eab3, #c5f1d0);
-$gradient-color-three: linear-gradient(90deg, #e25377, #8cabfe, #62b4ff);
-$gradient-color-four: linear-gradient(90deg, #ffffff, #f4b8b8, #e3b3ea, #c5c9f1);
-$gradient-color-five: linear-gradient(90deg, #ffffff, #f4b8b8, #e3b3ea, #c5c9f1);
+// palette - 1
+$color-azure-blue: #2093fe;
+$color-electric-purple: #c217fee5;
 
+// palette - 2
+$color-periwinkle: #c7d4ff;
+$color-light-coral:#f4b8b8;
+$color-pale-lime: #e3eab3;
+$color-mint-green: #c5f1d0;
+
+// palette - 3
+$color-raspberry: #e25377;
+$color-cornflower-blue:#8cabfe;
+$color-sky-blue: #62b4ff;
+
+// palette - 4
+$color-orchid: #e3b3ea;
+$color-lavender-blue:#c5c9f1;
+
+// main-bg-colors
+$gradient-color-one: linear-gradient(75deg, $color-azure-blue, $color-electric-purple 90%);
+$gradient-color-two: linear-gradient(90deg, $color-periwinkle, $color-light-coral, $color-periwinkle, $color-pale-lime, $color-mint-green);
+$gradient-color-three: linear-gradient(180deg, $color-raspberry, $color-cornflower-blue, $color-sky-blue);
+$gradient-color-four: linear-gradient(90deg, $color-white, $color-light-coral, $color-orchid, $color-lavender-blue);
+
+// main-gradient-background
 $bg-gradient:
-  $gradient-color-one, $gradient-color-two, $gradient-color-three, $gradient-color-four,
-  $gradient-color-five;
+  $gradient-color-one, $gradient-color-two, $gradient-color-three, $gradient-color-four;
 
 // fonts
 $color-font-default: #232325;
 $color-font-normal: #414246;
-//$color-font-bold: #232325;
 $color-font-light: $color-white;
+$color-font-gray: #86888E;
 
 // bg-components-colors
 $default-card-bg: #f6f6f6;
 $default-card-bg-dark: #eeeeee;
+$default-footer-bg-light: #232325C9;
+
+//borders
+$color-border-light: #5b5c62;
+

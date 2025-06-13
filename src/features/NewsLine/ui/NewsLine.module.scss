@@ -1,0 +1,37 @@
+@import "@@/public/styles/utils/colors";
+@import "@@/public/styles/utils/breakpoints";
+
+.container {
+  width: 100%;
+  background: $gradient-color-four;
+  position: relative;
+  height: 40px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.newsWrapper {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  width: 100%;
+  z-index: 3;
+  animation: newsLine 20s linear infinite;
+}
+
+@keyframes newsLine {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.newsItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}

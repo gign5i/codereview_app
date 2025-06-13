@@ -8,13 +8,26 @@ import { ITypographyProps } from "@/shared/ui/Typography/interfaces/ITypographyP
 const Typography = forwardRef<
   HTMLElement,
   PropsWithChildren<ITypographyProps> & DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>
->(({ children, component = "span", type = "p", className: currentClassName, ...rest }, ref) => {
-  const className = clsx(styles.root, currentClassName, {
-    [styles[`root_${type}`]]: type,
-  });
+>(
+  (
+    {
+      children,
+      component = "span",
+      type = "p",
+      color = "black",
+      className: currentClassName,
+      ...rest
+    },
+    ref,
+  ) => {
+    const className = clsx(styles.root, currentClassName, {
+      [styles[`root_${type}`]]: type,
+      [styles[`color_${color}`]]: color,
+    });
 
-  return createElement(component, { className, ref, ...rest }, children);
-});
+    return createElement(component, { className, ref, ...rest }, children);
+  },
+);
 
 Typography.displayName = "Typography";
 

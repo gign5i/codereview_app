@@ -6,6 +6,6 @@ export interface ICardProps {
   contentClassName?: string;
   footerClassName?: string;
   header?: ReactNode | string;
-  children: ReactNode;
+  children?: ReactNode;
   footer?: ReactNode | string;
 }

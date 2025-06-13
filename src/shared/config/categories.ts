@@ -80,3 +80,7 @@ export const categoriesList: ICategoriesProps[] = [
     icon: ProfileIcon,
   },
 ];
+
+export const categoriesMain: ICategoriesProps[] = categoriesList.filter(
+  category => category.id !== 9,
+);

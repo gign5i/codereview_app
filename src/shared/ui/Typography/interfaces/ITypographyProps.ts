@@ -1,4 +1,4 @@
-export type TTypographyType =
+type TTypographyType =
   | "h1"
   | "h2"
   | "h3"
@@ -10,6 +10,8 @@ export type TTypographyType =
   | "medium"
   | "primarySelect"
   | "secondarySelect";
+
+type TTypographyFontColor = "white" | "black" | "gray";
 
 type TagComponent =
   | "h1"
@@ -27,4 +29,5 @@ type TagComponent =
 export interface ITypographyProps {
   component?: TagComponent;
   type?: TTypographyType;
+  color?: TTypographyFontColor;
 }
