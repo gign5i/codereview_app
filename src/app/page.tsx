@@ -1,7 +1,6 @@
-import MainPage from "@/pages/main/ui/mainPage";
-import { Content, Page } from "@/shared";
-import Header from "../widgets/Header/ui/Header";
-import { Footer } from "@/widgets";
+import { Content, Page } from "src/shared";
+import { Footer, Header } from "src/widgets";
+import MainPage from "@/pages/ui/MainPage";
 
 const Home = () => (
   <Page>

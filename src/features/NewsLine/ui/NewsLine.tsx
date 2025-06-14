@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import { newsLineItems } from "@/features/NewsLine/config/newsLineItems";
-import { Icon, Typography } from "@/shared";
+import { Icon, Typography } from "src/shared";
 import styles from "./NewsLine.module.scss";
 import DuckIcon from "@@/public/icons/duck.webp";
 

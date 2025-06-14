@@ -1,4 +1,4 @@
-import { ESpecialization } from "@/shared";
+import ESpecialization from "@/shared/const/ESpecialization";
 
 interface ISpecializationsProps {
   id: number;

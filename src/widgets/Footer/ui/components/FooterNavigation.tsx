@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import styles from "@/widgets/Footer/ui/Footer.module.scss";
 import { footerLinksList } from "@/widgets/Footer/config/footerLinksList";
-import { Card, Typography } from "@/shared";
+import { Card, Typography } from "src/shared";
 
 const FooterNavigation = (): ReactElement => (
   <div className={styles.mainFooterContent}>

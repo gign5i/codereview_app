@@ -1,4 +1,4 @@
-@import "@@/public/styles/utils/colors";
+@use "@@/public/styles/utils/colors" as *;
 
 .root {
   padding: 12px 18px;

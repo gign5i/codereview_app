@@ -1,5 +1,5 @@
-@import "../../../../../public/styles/utils/styles";
-@import "../../../../../public/styles/utils/colors";
+@use "../../../../../public/styles/utils/styles" as *;
+@use "../../../../../public/styles/utils/colors" as *;
 
 .root {
   font-family: "Wix Madefor Display", sans-serif;

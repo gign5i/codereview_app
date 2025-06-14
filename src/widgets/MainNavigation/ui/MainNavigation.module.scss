@@ -1,5 +1,5 @@
 @use "sass:map";
-@import "@@/public/styles/utils/breakpoints";
+@use "@@/public/styles/utils/breakpoints" as *;
 
 .navigationRoot {
   display: flex;

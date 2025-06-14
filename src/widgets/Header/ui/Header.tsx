@@ -7,8 +7,8 @@ import LogoMobile from "@@/public/logo/logoMobile.webp";
 import ProfileIcon from "@@/public/icons/profile.webp";
 
 import Image from "next/image";
-import { Button, Typography, useWindowResolution } from "@/shared";
-import NavigationModal from "../../../features/NavigationModal/ui/NavigationModal";
+import { Button, Typography, useWindowResolution } from "src/shared";
+import { NavigationModal } from "src/features";
 
 const Header = (): ReactElement => {
   const { isMobile } = useWindowResolution();

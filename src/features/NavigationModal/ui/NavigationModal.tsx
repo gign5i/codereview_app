@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card, CategoriesTabs, Icon, SpecializationsTabs, Typography } from "@/shared";
+import { Button, Card, CategoriesTabs, Icon, SpecializationsTabs, Typography } from "src/shared";
 import styles from "./NavigationModal.module.scss";
 import MenuIcon from "@@/public/icons/menu.webp";
 import ArrowDownIcon from "@@/public/icons/arrow-down.webp";

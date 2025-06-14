@@ -1,5 +1,5 @@
-@import "../../../../../public/styles/utils/styles";
-@import "@@/public/styles/utils/colors";
+@use "../../../../../public/styles/utils/styles";
+@use "@@/public/styles/utils/colors" as *;
 
 .root {
   border-radius: 6px;

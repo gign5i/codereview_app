@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactElement } from "react";
-import { Typography, useWindowResolution } from "@/shared";
+import { Typography, useWindowResolution } from "src/shared";
 import SophieAvater from "@@/public/images/Sophie/SophieAvatarSmall.webp";
 import Image from "next/image";
 import styles from "./AssistantIntro.module.scss";

@@ -1,6 +1,6 @@
 @use "sass:map";
-@import "@@/public/styles/utils/colors";
-@import "@@/public/styles/utils/breakpoints";
+@use "@@/public/styles/utils/colors" as *;
+@use "@@/public/styles/utils/breakpoints" as *;
 
 .root {
   display: grid;

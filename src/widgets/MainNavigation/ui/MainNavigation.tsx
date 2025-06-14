@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import { CategoriesTabs } from "@/shared";
-import { NavigationCards } from "@/features";
+import { CategoriesTabs } from "src/shared";
+import { NavigationCards } from "src/features";
 import styles from "./MainNavigation.module.scss";
 
 const MainNavigation = (): ReactElement => {

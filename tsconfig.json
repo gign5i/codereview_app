@@ -13,6 +13,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".",
     "plugins": [
       {
         "name": "next"
@@ -21,14 +22,13 @@
     "paths": {
       "@/*": ["./src/*"],
       "@@/*": ["./*"],
-      "shared/*": ["shared/*"],
-      "entities/*": ["entities/*"],
-      "features/*": ["features/*"],
-      "pages/*": ["pages/*"],
-      "widgets/*": ["widgets/*"]
+      "shared/*": ["./shared/*"],
+      "entities/*": ["./entities/*"],
+      "features/*": ["./features/*"],
+      "pages/*": ["./pages/*"],
+      "widgets/*": ["./widgets/*"]
     }
   },
-  "include": [
-    "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

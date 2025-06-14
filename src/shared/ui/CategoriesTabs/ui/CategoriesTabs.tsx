@@ -1,6 +1,6 @@
 import styles from "./CategoriesTabs.module.scss";
 import { specializations } from "@/shared/config/specializations";
-import { Button, Typography } from "@/shared";
+import { Button, Typography } from "src/shared";
 import { ReactElement } from "react";
 import clsx from "clsx";
 

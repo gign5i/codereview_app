@@ -3,8 +3,7 @@
 // import type { Metadata } from "next";
 import "./globals.scss";
 import "../../public/styles/utils/styles.scss";
-import "../../public/styles/utils/typography.scss";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 /*
 const geistSans = Geist({
   variable: "--font-geist-sans",

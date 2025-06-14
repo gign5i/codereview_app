@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import styles from "@/widgets/Footer/ui/Footer.module.scss";
-import { Icon, Typography } from "@/shared";
+import { Icon, Typography } from "src/shared";
 import FooterLogo from "@@/public/logo/footerLogo.webp";
 
 const FooterContacts = (): ReactElement => (

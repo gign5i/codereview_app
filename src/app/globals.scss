@@ -1,5 +1,5 @@
-@import "../../public/styles/utils/styles";
-@import "../../public/styles/utils/colors";
+@use "../../public/styles/utils/styles" as *;
+@use "../../public/styles/utils/colors" as *;
 
 #root {
   max-width: 1280px;
@@ -16,6 +16,8 @@
 }
 
 :root {
+  --font-family-main: "Wix Madefor Display", sans-serif;
+
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -38,7 +40,7 @@ body {
   background-size: cover;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 * {

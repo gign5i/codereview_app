@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import styles from "@/widgets/Footer/ui/Footer.module.scss";
-import { Icon, Typography } from "@/shared";
+import { Icon, Typography } from "src/shared";
 import DuckGradientIcon from "@@/public/icons/duck-gradient.webp";
 
 const FooterDetails = (): ReactElement => (

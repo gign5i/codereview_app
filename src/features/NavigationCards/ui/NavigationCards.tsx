@@ -2,7 +2,7 @@
 
 import { ReactElement } from "react";
 import { categoriesMain } from "@/shared/config/categories";
-import { Card, Icon, Typography, useWindowResolution } from "@/shared";
+import { Card, Icon, Typography, useWindowResolution } from "src/shared";
 import styles from "./NavigationCards.module.scss";
 import PeopeIcon from "@@/public/icons/MockedPhoto.webp";
 
@@ -12,7 +12,7 @@ const NavigationCards = (): ReactElement => {
   return (
     <>
       <div className={styles.root}>
-        {categoriesMain.map(category => (
+        {categoriesMain?.map(category => (
           <Card
             className={styles.cardItem}
             headerClassName={styles.cardHeader}

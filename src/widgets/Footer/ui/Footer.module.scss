@@ -1,4 +1,4 @@
-@import "@@/public/styles/utils/colors";
+@use "@@/public/styles/utils/colors" as *;
 
 .footerContainer {
   background-color: $default-footer-bg-light;
@@ -21,7 +21,7 @@
 .contactsDetails {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .mainFooterContent {

@@ -27,13 +27,13 @@ $color-sky-blue: #62b4ff;
 $color-orchid: #e3b3ea;
 $color-lavender-blue:#c5c9f1;
 
-// main-bg-colors
+// ui-bg-colors
 $gradient-color-one: linear-gradient(75deg, $color-azure-blue, $color-electric-purple 90%);
 $gradient-color-two: linear-gradient(90deg, $color-periwinkle, $color-light-coral, $color-periwinkle, $color-pale-lime, $color-mint-green);
 $gradient-color-three: linear-gradient(180deg, $color-raspberry, $color-cornflower-blue, $color-sky-blue);
 $gradient-color-four: linear-gradient(90deg, $color-white, $color-light-coral, $color-orchid, $color-lavender-blue);
 
-// main-gradient-background
+// ui-gradient-background
 $bg-gradient:
   $gradient-color-one, $gradient-color-two, $gradient-color-three, $gradient-color-four;
 

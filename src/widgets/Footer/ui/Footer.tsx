@@ -1,10 +1,10 @@
 import { ReactElement } from "react";
 import styles from "./Footer.module.scss";
-import { NewsLine } from "@/features";
+import { NewsLine } from "src/features";
 import FooterNavigation from "@/widgets/Footer/ui/components/FooterNavigation";
 import FooterDetails from "@/widgets/Footer/ui/components/FooterDetails";
 import FooterContacts from "@/widgets/Footer/ui/components/FooterContacts";
-import { Icon, Typography } from "@/shared";
+import { Icon, Typography } from "src/shared";
 import { footerSocialLinks } from "@/widgets/Footer/config/footerSocialLinks";
 
 const Footer = (): ReactElement => (
