@@ -14,6 +14,7 @@ interface ICategoriesProps {
   title: string;
   description: string;
   icon: string | StaticImport;
+  className?: string;
 }
 
 export const categoriesList: ICategoriesProps[] = [
@@ -37,6 +38,7 @@ export const categoriesList: ICategoriesProps[] = [
     description:
       "Реальные задания с отборов на стажировки и junior позиции - для практики и портфолио",
     icon: CodeIcon,
+    className: "gradient-1",
   },
   {
     id: 4,
@@ -51,6 +53,7 @@ export const categoriesList: ICategoriesProps[] = [
     description:
       "Конференции, хакатоны, метапы и курсы - чтобы расширить кругозор, найти стажировку и завести связи",
     icon: CalendarIcon,
+    className: "gradient-2",
   },
   {
     id: 6,

@@ -7,10 +7,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
 
-  @media screen and (max-width: map.get($breakpoints, "sm")) {
-    //display: flex;
-    //flex-direction: column;
-    //gap: 8px;
+  @media screen and (max-width: map.get($breakpoints, "md")) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -40,7 +37,7 @@
     object-fit: cover;
     transform: translate(0, 10px) rotate(15deg) scale(1.5);
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     pointer-events: none;
     z-index: -1;
     background-color: $default-card-bg-dark;
@@ -62,9 +59,10 @@
     animation: hoverContent 1s forwards;
   }
 
-  @media screen and (max-width: map.get($breakpoints, "sm")) {
+  @media screen and (max-width: map.get($breakpoints, "md")) {
     width: auto;
-    height: auto;
+    height: 150px;
+    padding: 15px;
   }
 }
 
@@ -79,6 +77,10 @@
   width: 26px;
 }
 
+.titleStyle {
+  font-weight: 600;
+}
+
 .cardHeader {
   height: 40px;
   transition: opacity 0.1s ease-in-out;
@@ -91,12 +93,6 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-@keyframes hoverContent {
-  to {
-    transform: translateY(5px);
-  }
-}
-
 .additionalIconStyle {
   width: 115px;
   height: 40px;
@@ -106,8 +102,7 @@
   display: flex;
   gap: 8px;
 
-
-  @media screen and (max-width: map.get($breakpoints, "sm")) {
+  @media screen and (max-width: map.get($breakpoints, "md")) {
     flex-direction: column;
   }
 }
@@ -118,14 +113,48 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media screen and (max-width: map.get($breakpoints, "sm")) {
+  background: $default-card-bg;
+  transition: filter 1s ease-in-out;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: map.get($breakpoints, "md")) {
     width: auto;
+    justify-content: initial;
+    gap: 15px;
+    height: auto;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      50deg,
+      $color-pale-lime 10%,
+      $color-light-coral 40%,
+      $color-cornflower-blue
+    );
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: inherit;
+    filter: grayscale(55%);
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
+  &:hover .cardHeader {
+    animation-delay: 0.5s;
+    animation: hoverContent 1s forwards;
   }
 }
 
 .contactDescription {
   width: 476px;
-  @media screen and (max-width: map.get($breakpoints, "sm")) {
+  @media screen and (max-width: map.get($breakpoints, "md")) {
     width: auto;
   }
 }
@@ -137,16 +166,38 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 
-  @media screen and (max-width: map.get($breakpoints, "sm")) {
+  @media screen and (max-width: map.get($breakpoints, "md")) {
     width: auto;
     height: auto;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
-}
+  overflow: hidden;
 
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: conic-gradient(
+      $color-sky-blue 50deg,
+      $color-raspberry 125deg 145deg,
+      $color-pale-lime 350deg
+    );
+    filter: blur(30px);
+    opacity: 0;
+    z-index: -1;
+    border-radius: inherit;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+}
 
 .badge {
   font-weight: 500;
@@ -161,4 +212,25 @@
 
 .postVacansyTitle {
   color: $color-white;
+}
+
+.gradient-1 {
+  background: linear-gradient(
+    45deg,
+    $color-light-coral 10%,
+    $color-pale-lime 45%,
+    $color-mint-green 70%
+  );
+  filter: grayscale(50%);
+}
+
+.gradient-2 {
+  background: linear-gradient(45deg, $color-light-coral, $color-orchid, $color-lavender-blue);
+  filter: grayscale(30%);
+}
+
+@keyframes hoverContent {
+  to {
+    transform: translateY(5px);
+  }
 }

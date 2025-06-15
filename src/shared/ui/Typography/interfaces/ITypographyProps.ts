@@ -7,6 +7,7 @@ type TTypographyType =
   | "error"
   | "title"
   | "small"
+  | "tiny"
   | "medium"
   | "primarySelect"
   | "secondarySelect";

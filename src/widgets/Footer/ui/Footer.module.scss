@@ -1,4 +1,6 @@
+@use "sass:map";
 @use "@@/public/styles/utils/colors" as *;
+@use "@@/public/styles/utils/breakpoints" as *;
 
 .footerContainer {
   background-color: $default-footer-bg-light;
@@ -6,22 +8,36 @@
 .footerContent {
   padding: 60px 110px 20px 110px;
   height: auto;
+
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    padding: 20px 15px;
+  }
 }
 .container {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    gap: 20px;
+  }
 }
 
 .contactsDetails {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    align-items: flex-start;
+  }
 }
 
 .mainFooterContent {
@@ -29,13 +45,22 @@
   gap: 50px;
   height: 160px;
   margin-bottom: 20px;
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    height: auto;
+    gap: 30px;
+    flex-direction: column;
+    margin-bottom: initial;
+  }
 }
 
 .linksWrapper {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2, minmax(150px, max-content));
   row-gap: 12px;
   column-gap: 50px;
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    column-gap: 23px;
+  }
 }
 
 .cardStyle {
@@ -46,6 +71,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    width: 100%;
+    height: 115px;
+    align-items: center;
+  }
+}
+
+.mobileCardHeader {
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    text-align: center;
+    width: 200px;
+  }
 }
 
 .linkItem {
@@ -63,17 +101,27 @@
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
 }
-// TODO: поменять
-.one {
+
+.innInfo {
   width: 320px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.5px;
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    text-align: center;
+  }
 }
 
-.two {
+.other {
   display: flex;
   gap: 8px;
   align-items: flex-start;
@@ -89,6 +137,13 @@
   margin-bottom: 28px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: map.get($breakpoints, "md")) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .socialsWrapper {

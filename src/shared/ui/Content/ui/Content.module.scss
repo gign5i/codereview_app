@@ -1,7 +1,12 @@
-
+@use "sass:map";
+@use "@@/public/styles/utils/breakpoints" as *;
 
 .root {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px 190px;
+  @media screen and (max-width: map.get($breakpoints, 'sm')) {
+    padding: 44px 15px;
+  }
 }

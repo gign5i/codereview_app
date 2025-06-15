@@ -8,7 +8,7 @@
 
   margin-top: 80px;
   margin-bottom: 80px;
-  @media screen and (max-width: map.get($breakpoints, "sm")) {
+  @media screen and (max-width: map.get($breakpoints, "md")) {
     margin-top: 50px;
     margin-bottom: 50px;
   }
