@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "18"
+
+before_install:
+  - curl -fsSL https://bun.sh/install | bash
+  - export BUN_INSTALL="$HOME/.bun"
+  - export PATH="$BUN_INSTALL/bin:$PATH"
+  - bun --version
+
+install:
+  - bun install
+
+script:
+  - bun lint
+  - bun build
