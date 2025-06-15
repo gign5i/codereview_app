@@ -5,6 +5,7 @@ import clsx from "clsx";
 interface ICustomButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   outline?: boolean;
+  primary?: boolean;
   className?: string;
 }
 
@@ -12,6 +13,7 @@ const CustomButton = ({
   children,
   className,
   outline = false,
+  primary = false,
   ...props
 }: ICustomButtonProps): ReactElement => {
   return (
@@ -20,6 +22,7 @@ const CustomButton = ({
         styles.root,
         {
           [styles["root_outlined"]]: outline,
+          [styles["root_primary"]]: primary,
         },
         className,
       )}

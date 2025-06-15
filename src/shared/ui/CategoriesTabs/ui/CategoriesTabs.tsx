@@ -11,7 +11,7 @@ const CategoriesTabs = ({ className }: { className?: string }): ReactElement => 
   return (
     <div className={clsx(styles.specialisationsWrapper, className)}>
       {specializations.map(specialization => (
-        <Button key={specialization.id} className={styles.specialisationItem}>
+        <Button primary key={specialization.id} className={styles.specialisationItem}>
           <Typography type={isMobile ? "small" : "normal"}>{specialization.label}</Typography>
         </Button>
       ))}

@@ -16,7 +16,7 @@
 .container {
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: map.get($breakpoints, "md")) {
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
     flex-direction: column-reverse;
     gap: 30px;
   }
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
-  @media screen and (max-width: map.get($breakpoints, "md")) {
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
     gap: 20px;
   }
 }
@@ -45,7 +45,7 @@
   gap: 50px;
   height: 160px;
   margin-bottom: 20px;
-  @media screen and (max-width: map.get($breakpoints, "md")) {
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
     height: auto;
     gap: 30px;
     flex-direction: column;
@@ -72,7 +72,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media screen and (max-width: map.get($breakpoints, "md")) {
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
     width: 100%;
     height: 115px;
     align-items: center;
@@ -80,7 +80,7 @@
 }
 
 .mobileCardHeader {
-  @media screen and (max-width: map.get($breakpoints, "md")) {
+  @media screen and (max-width: map.get($breakpoints, "sm")) {
     text-align: center;
     width: 200px;
   }

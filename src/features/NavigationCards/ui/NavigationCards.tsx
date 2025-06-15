@@ -8,7 +8,7 @@ import PeopeIcon from "@@/public/icons/MockedPhoto.webp";
 import clsx from "clsx";
 
 const NavigationCards = (): ReactElement => {
-  const { isMobile } = useWindowResolution();
+  const { isMobile, isTablet } = useWindowResolution();
 
   return (
     <>
@@ -28,7 +28,9 @@ const NavigationCards = (): ReactElement => {
               </Typography>
             }
           >
-            {!isMobile ? <Typography type="small">{category.description}</Typography> : null}
+            {isMobile || isTablet ? null : (
+              <Typography type="small">{category.description}</Typography>
+            )}
           </Card>
         ))}
       </div>

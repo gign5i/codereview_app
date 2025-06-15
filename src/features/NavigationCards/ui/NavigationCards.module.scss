@@ -50,13 +50,13 @@
   }
 
   &:hover .description {
-    animation-delay: 0.5s;
     opacity: 1;
     animation: hoverContent 1s forwards;
+    animation-delay: 0.5s;
   }
   &:hover .cardHeader {
-    animation-delay: 0.5s;
     animation: hoverContent 1s forwards;
+    animation-delay: 0.5s;
   }
 
   @media screen and (max-width: map.get($breakpoints, "md")) {

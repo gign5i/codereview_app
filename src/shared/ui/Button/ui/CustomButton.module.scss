@@ -9,35 +9,52 @@ $btn-gradient-color: linear-gradient(45deg, $color-azure-blue, $color-electric-p
   border: none;
   border-radius: 18px;
   cursor: pointer;
-  &:enabled:hover {
+}
+
+.root_primary {
+  position: relative;
+  transition: color .5s ease-in-out;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background: $btn-gradient-color;
-    color: $color-white;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .3s ease-in-out;
+    border-radius: inherit;
+  }
+  &:enabled:hover {
     * {
-      color: inherit;
+      color: $color-white;
     }
   }
-  &:enabled:focus {
-    background: $btn-gradient-color;
+  &:enabled:hover:before {
+    opacity: 1;
+  }
+  &:enabled:focus:before {
+    opacity: 1;
     color: $color-white;
-    * {
-      color: inherit;
-    }
   }
 }
 
 .root_outlined {
   background: none;
-  color: $color-font-normal;
   padding: 0;
   &:enabled:hover {
     background: initial;
     color: $color-font-normal;
     * {
-      color: $color-font-normal;
+      color: inherit;
     }
   }
   &:enabled:focus {
     background: initial;
     color: $color-font-normal;
+    * {
+      color: inherit;
+    }
   }
 }
